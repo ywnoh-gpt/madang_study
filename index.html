@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>마당 스터디 | 부동산 경매 노트</title>
+<style>
+:root{--bg:#f6f7f9;--paper:#fff;--ink:#182236;--muted:#65738a;--line:#dfe5ec;--accent:#245eae;--pale:#eaf2ff;--green:#126d54;--warn:#fff7e8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 "Pretendard","Noto Sans KR",system-ui,sans-serif}
+aside{position:fixed;left:0;top:0;bottom:0;width:265px;background:#14223a;color:#eef4ff;padding:28px 18px;overflow:auto}
+.brand{font-size:22px;font-weight:800;margin:0 8px 6px}.sub{color:#aebed3;font-size:13px;margin:0 8px 28px}
+nav a{display:block;color:#cbd9ed;text-decoration:none;padding:11px 13px;border-radius:10px;font-size:14px}nav a:hover,nav a.active{background:#2c466d;color:white}
+main{margin-left:265px;max-width:1220px;padding:40px 48px 100px}header{margin-bottom:28px}.eyebrow{letter-spacing:.1em;color:var(--accent);font-size:13px;font-weight:800;text-transform:uppercase}h1{font-size:35px;letter-spacing:-.04em;line-height:1.25;margin:8px 0 14px}h2{font-size:24px;letter-spacing:-.03em;margin:0 0 20px}h3{font-size:18px;margin:28px 0 8px}p{margin:9px 0}small,.muted{color:var(--muted)}
+.hero{background:linear-gradient(120deg,#18345f,#285da2);border-radius:22px;color:white;padding:34px;margin-bottom:24px}.hero p{color:#dce9fb}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.chip{font-size:13px;border:1px solid #ffffff60;padding:5px 11px;border-radius:99px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:17px;padding:28px 30px;margin:20px 0;box-shadow:0 3px 16px #192b4708}.card>p:first-child{margin-top:0}
+.section-head{display:flex;align-items:center;gap:12px}.number{background:var(--pale);color:var(--accent);font-weight:800;border-radius:11px;padding:5px 12px}
+.callout{border-left:4px solid #3e81d6;background:var(--pale);padding:16px 19px;border-radius:0 11px 11px 0;margin:18px 0}.warning{background:var(--warn);border-left-color:#d5a03e}.note{border-left-color:#209477;background:#ebf8f3}
+ul,ol{padding-left:24px}li{margin:5px 0}table{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}th,td{text-align:left;border-bottom:1px solid var(--line);padding:11px 12px;vertical-align:top}th{background:#f1f5fa;color:#374963}a{color:var(--accent)}
+.timeline{display:flex;gap:7px;flex-wrap:wrap;margin:18px 0}.step{flex:1 1 140px;background:#eff5ff;border:1px solid #d5e5fa;border-radius:12px;padding:13px;font-size:13px}.step b{display:block;color:#205ca8;margin-bottom:4px}
+mark{background:#fff0aa;padding:1px 3px;border-radius:3px}details{border:1px solid var(--line);border-radius:11px;padding:12px 16px;margin:10px 0;background:#fff}summary{cursor:pointer;font-weight:700}
+.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0 24px}input{padding:12px 15px;border:1px solid #cbd5e1;border-radius:10px;font:inherit;width:min(420px,100%)}button{padding:11px 16px;border:1px solid #cbd5e1;background:white;border-radius:10px;cursor:pointer}button:hover{background:#edf4fd}
+.lesson{scroll-margin-top:22px}.tag{font-size:12px;background:#e8f6ef;color:#167455;padding:4px 8px;border-radius:7px;margin-left:8px}.tag.progress{background:#fff2df;color:#995b0c}
+@media(max-width:800px){aside{position:static;width:auto;padding:16px}nav{display:flex;overflow:auto;gap:4px}.brand,.sub{display:none}nav a{white-space:nowrap}main{margin:0;padding:20px 14px}h1{font-size:28px}.card{padding:20px 17px}.hero{padding:24px}table{font-size:12px}th,td{padding:8px}}
+@media print{aside,.toolbar{display:none}main{margin:0;max-width:100%;padding:0}.card{break-inside:avoid;box-shadow:none}.hero{color:#182236;background:#eaf2ff}}
+</style></head><body>
+<aside><div class="brand">MADANG STUDY</div><div class="sub">부동산 경매 학습 노트 · v0.1</div><nav>
+<a href="#overview">전체 개요</a><a href="#lesson1">01 · 경매 마인드셋</a><a href="#lesson2">02 · 기본 용어와 법원 절차</a><a href="#lesson3">03 · 투자자 사이클</a><a href="#lesson4">04 · 권리분석</a><a href="#lesson5">05 · 돈 되는 물건 찾기</a><a href="#checklist">실전 체크리스트</a><a href="#future">다음 강의</a></nav></aside>
+<main>
+<header id="overview"><div class="eyebrow">REAL ESTATE AUCTION / STUDY NOTES</div><h1>부동산 경매 공부 노트</h1><p class="muted">인강 수강 내용을 기반으로 재구성한 복습 자료 · 2026.10.28 · 1~5강</p></header>
+<div class="hero"><div class="eyebrow" style="color:#bad9ff">지금까지 가장 중요한 원칙</div><h2 style="font-size:28px;margin:6px 0">싸게 사는 것보다, <u>팔릴 물건을 싸게 사는 것</u></h2><p>권리분석으로 위험을 줄이고, 실제 매수자의 시선으로 수요를 확인한 뒤, 감당 가능한 투자금 안에서 낙찰받는다.</p><div class="chips"><span class="chip">1~4강 수강 완료</span><span class="chip">5강 수강 중</span><span class="chip">강의 필기 + 보충 설명</span></div></div>
+<div class="toolbar"><input id="search" placeholder="개념 검색: 말소기준권리, 임차인, 명도…" aria-label="학습 내용 검색"><button onclick="window.print()">인쇄 / PDF 저장</button><button onclick="document.getElementById('search').value='';filterNotes()">검색 초기화</button><span id="searchCount" class="muted"></span></div>
+<section id="lesson1" class="lesson card searchable"><div class="section-head"><span class="number">01</span><h2>경매를 해야 하는 이유 <span class="tag">완료</span></h2></div>
+<p>1강은 커리큘럼 소개와 동기부여 중심의 짧은 강의. 상대적으로 적은 노력으로도 큰 수익의 기회를 만들 수 있다는 강사의 메시지를 전달한다.</p>
+<div class="callout">투자 수익은 보장되지 않는다. 실제로는 권리분석, 시세 조사, 명도, 보유비용과 매도까지의 노력이 필요하다는 점을 전제로 공부한다.</div></section>
+<section id="lesson2" class="lesson card searchable"><div class="section-head"><span class="number">02</span><h2>경매 기본 용어와 법원 절차 <span class="tag">완료</span></h2></div>
+<h3>1. 기본 용어</h3><table><tr><th>용어</th><th>뜻 / 기억법</th></tr>
+<tr><td>채권자 / 채무자</td><td>채권자: 채무 이행을 요구할 권리가 있는 사람 / 채무자: 이행할 의무가 있는 사람</td></tr>
+<tr><td>임의경매</td><td>근저당권·전세권 등 담보권을 실행하기 위한 경매. 원칙적으로 별도 승소판결 없이 담보권에 기초해 신청 가능.</td></tr>
+<tr><td>강제경매</td><td>채권 회수를 위해 확정판결, 집행력 있는 공정증서 등 <b>집행권원</b>에 근거하여 진행하는 경매. 차용증만으로는 원칙적으로 바로 불가.</td></tr>
+<tr><td>매각기일</td><td>입찰하는 날. 유찰되면 이후 매각에서 최저매각가격이 낮아지는 것이 일반적.</td></tr>
+<tr><td>매각결정기일</td><td>법원이 매각허가 여부를 결정하는 날. 통상 입찰일 약 1주일 뒤.</td></tr>
+<tr><td>매각허가결정 확정</td><td>불복기간 경과 등으로 허가결정이 확정되는 단계. 일반 매매계약과는 다른 법원 매각절차임.</td></tr>
+<tr><td>대금지급기한</td><td>법원이 정한 잔금 납부 기한. 완납하면 소유권을 취득함.</td></tr>
+<tr><td>배당기일</td><td>매각대금에서 집행비용 등을 공제하고 법정 순위에 따라 채권자에게 배당하는 날. 잉여금은 소유자에게 돌아갈 수 있음.</td></tr>
+<tr><td>현황조사보고서</td><td>집행관이 부동산 현황·점유·임대차 상황 등을 조사한 자료. 실제 내용은 추가 검증 필요.</td></tr>
+<tr><td>인도명령</td><td>명도 협의가 안 되면 법원에 신청하는 간이 인도 절차. 잔금 완납일부터 <b>6개월 이내</b> 신청. 대항할 수 있는 점유권원이 있으면 제한될 수 있음.</td></tr></table>
+<h3>2. 법원 입장에서 보는 경매 9단계</h3>
+<div class="timeline"><div class="step"><b>01 경매신청</b>경매개시결정</div><div class="step"><b>02 배당요구</b>종기 결정·공고</div><div class="step"><b>03 매각 준비</b>조사·평가</div><div class="step"><b>04 매각 공고</b>방법 지정·통지</div><div class="step"><b>05 매각 실시</b>입찰</div><div class="step"><b>06 매각결정</b>허가 여부</div><div class="step"><b>07 대금 납부</b>소유권 취득</div><div class="step"><b>08 인도 관련</b>등기 촉탁·인도명령</div><div class="step"><b>09 배당</b>채권자 배분</div></div>
+<p>유찰 시 신경매, 매각불허가 시 사유에 따른 재진행, 대금 미납 시 재매각이 진행될 수 있다.</p>
+<div class="callout note"><b>기간 감각</b> — 매각기일 → 약 1주일 뒤 매각결정 → 통상 약 1주일의 즉시항고 기간 → 확정 뒤 대금지급기한 지정 → 완납 후 배당. ‘한 달’은 강의상 대략적인 흐름이지 법정 고정기간이 아니다.</div>
+</section>
+<section id="lesson3" class="lesson card searchable"><div class="section-head"><span class="number">03</span><h2>투자자가 돈 버는 사이클 <span class="tag">완료</span></h2></div>
+<div class="timeline"><div class="step"><b>01 물건 선정</b>대상 검색</div><div class="step"><b>02 시세 조사</b>싸게 살 수 있나</div><div class="step"><b>03 권리분석</b>인수 위험 있나</div><div class="step"><b>04 현장 조사</b>직접 확인</div><div class="step"><b>05 입찰</b>가격 결정</div><div class="step"><b>06 명도</b>점유 인도</div><div class="step"><b>07 수익</b>매도·임대</div></div>
+<p><b>손품</b> = 온라인 물건 선정 → 시세 조사 → 권리분석. <b>발품</b> = 직접 현장을 찾아 상태·입지·수요 확인.</p>
+<h3>시세 조사의 중요한 습관</h3><ul><li>네이버 부동산·호갱노노의 호가와 실거래가만으로 최종 결론을 내리지 않는다.</li><li>현지 공인중개사에게 실제 매도가·급매가·최근 거래·매수 수요를 물어본다.</li><li>가능하면 복수 중개사에게 확인하고, 얼마나 빨리 팔리는지도 살핀다.</li></ul>
+<h3>실전 사례 학습</h3><p>네이버 카페 <b>행복재테크(행크)</b>에서 낙찰 방법, 낙찰 후 명도·처리 과정, 매도 경험, 문제 해결 사례 등을 찾아볼 수 있다고 강의에서 소개함. 사례의 수익은 실제 비용과 기간을 별도 검증할 것.</p>
+</section>
+<section id="lesson4" class="lesson card searchable"><div class="section-head"><span class="number">04</span><h2>권리분석 마스터하기 <span class="tag">완료</span></h2></div>
+<p>권리분석은 낙찰받았을 때 <b>법적으로 인수해야 할 권리나 보증금이 있는지</b> 파악하는 실무상의 표현. 경매 초보자의 큰 진입장벽 중 하나다.</p>
+<h3>권리분석 4단계</h3><div class="timeline"><div class="step"><b>① 말소기준권리</b>기준 권리 찾기</div><div class="step"><b>② 등기부 선순위 권리</b>인수권리 확인</div><div class="step"><b>③ 임차인 보증금</b>대항력·배당 분석</div><div class="step"><b>④ 매각물건명세서</b>특수조건·인수사항</div></div>
+<h3>1단계 · 말소기준권리 찾기</h3>
+<p>경매에서 권리 소멸의 기준이 되는 권리. 말소기준권리 자체와 그보다 뒤의 권리는 <b>원칙적으로</b> 매각으로 소멸한다. 후보가 여러 개라면 그중 최선순위 권리를 찾는다.</p>
+<table><tr><th>말소기준권리 후보</th><th>주의</th></tr><tr><td>(근)저당권</td><td>대표적인 담보권</td></tr><tr><td>압류·가압류</td><td>등기 순위 확인</td></tr><tr><td>담보가등기</td><td>소유권이전청구권 보전가등기와 구분</td></tr><tr><td>경매개시결정 기입등기</td><td>앞선 기준 권리가 없을 때 검토</td></tr><tr><td>일정한 최선순위 전세권</td><td>경매신청 또는 배당요구 등 소멸 요건 확인</td></tr><tr><td>가처분</td><td><b>말소기준권리 아님</b>; 별도 인수 위험 확인</td></tr></table>
+<p><b>등기부 보는 법:</b> 갑구(소유권·압류·가압류 등)와 을구(근저당·전세권 등)에서 각각 말소기준권리 후보를 찾고 설정 순위를 비교한다. 단순히 모든 등기 중 가장 오래된 등기를 고르는 것이 아니다.</p>
+<h3>2단계 · 앞선 인수권리 확인</h3><p>말소기준권리보다 앞선 <b>가처분·소유권 가등기·전세권</b> 등은 인수 여부를 따져야 한다. 뒤에 있는 권리는 원칙적으로 소멸하지만, 후순위라도 예외가 있으므로 무조건 안전하다고 단정하지 않는다.</p>
+<h3>3단계 · 임차인과 보증금</h3>
+<ul><li>임차인이 없으면 임차보증금 인수 분석은 불필요하나 실제 점유관계를 확인한다.</li><li>주택 임차인은 통상 <b>점유 + 전입신고를 마친 다음 날 0시</b>부터 대항력이 발생하므로 전입일자만 비교하지 않는다.</li><li>말소기준권리보다 먼저 대항력이 생겼다면 배당요구 여부, 확정일자, 배당 순위 및 전액 배당 가능성을 검토한다.</li><li>선순위 대항력 임차인이 보증금을 전액 받지 못하면 낙찰자가 미회수 보증금을 인수할 위험이 있다.</li><li>후순위 임차인은 원칙적으로 낙찰자에게 대항하지 못하며, 조건을 갖추면 인도명령의 대상이 될 수 있다.</li></ul>
+<div class="callout warning"><b>중요:</b> ‘전입일이 늦다’와 ‘후순위다’는 항상 동의어가 아니다. 대항력 발생 시각을 비교해야 하며, 배당권과 대항력은 별개의 문제다.</div>
+<h3>4단계 · 매각물건명세서</h3><p>최선순위 설정일자, 점유·임대차 정보, 매각으로 소멸하지 않는 권리, 특별매각조건 및 비고를 확인한다. 명세서만으로 유치권·법정지상권 등 모든 위험이 해소된다고 볼 수는 없다.</p>
+<h3>실습 · 사이트 활용</h3><ul><li><a href="https://www.courtauction.go.kr/" target="_blank" rel="noopener">대한민국 법원경매정보</a>에서 물건과 법원 자료 검색.</li><li>등기부등본은 인터넷등기소 등에서 유료 열람·발급(강의 시점 안내: 열람 700원, 발급 1,000원).</li><li>강의에서는 자체 서비스 <b>행크옥션</b>도 소개. 여러 물건을 살펴보기 편하지만 분석 결과에 맹신하지 말고 스스로 검증.</li><li>감정가는 과거 감정평가 기준일의 금액(강의에서는 대략 6개월~1년 전이라고 설명). KB시세는 갱신되는 참고 시세이며 ‘무조건 최근 3개월 거래가격’이라는 의미는 아님.</li></ul>
+<div class="callout"><b>4강 요약:</b> 말소기준권리 찾기 → 등기부 선순위 인수권리 없음? → 임차보증금 인수 없음? → 매각물건명세서 특이사항 없음? 이 네 가지를 확인하는 것이 권리분석의 골격이다.</div>
+</section>
+<section id="lesson5" class="lesson card searchable"><div class="section-head"><span class="number">05</span><h2>돈 되는 경매 물건 찾는 법 <span class="tag progress">진행 중</span></h2></div>
+<p>강의에서는 경매 물건이 3만 건 이상 올라와 있다고 소개. 권리분석 규칙을 익히는 것과 실제로 수익이 나는 물건을 찾는 것은 다르다.</p>
+<h3>물건 선정의 네 가지 기준</h3><ol><li><b>감당 가능한 투자금:</b> 처음에는 큰 대출 없이 진행할 수 있는 물건부터.</li><li><b>익숙한 지역:</b> 시세와 수요를 잘 아는 동네부터 시작하고, 낯선 인기 지역은 경험이 쌓인 뒤 검토.</li><li><b>매수 수요:</b> 최종 목적이 매도라면 수익률보다 팔릴 가능성과 매도 기간을 우선 살핌.</li><li><b>해결 가능한 약간의 난이도:</b> 누구나 쉽게 입찰하는 물건은 경쟁이 과열될 수 있음. 남들은 애매해하지만 스스로 해결할 수 있는 문제라면 기회가 되기도 함.</li></ol>
+<div class="callout note"><b>최우선 원칙:</b> “수익이 조금 적어도 잘 팔리는 물건”, “최종 소비자가 사고 싶어 할 물건”을 찾는다. 싸다는 이유만으로 매수하지 않는다.</div>
+<h3>초보자용 실습 흐름</h3><ul><li>강의에서 행크옥션 ‘인기검색 → 초보자경매’ 메뉴를 소개함(강의 당시 한 달 무료 이용 가능하다고 안내).</li><li>초품아, 초품빌, 역세권 등 여러 필터를 이용해 물건을 선별하는 기능 소개.</li><li>후보별로 ① 말소기준등기 ② 선순위 인수권리 ③ 임차인 존재와 대항력 순서로 검토.</li><li>임차인 권리가 불확실하거나 인수 위험이 해소되지 않으면 초보자는 포기하는 선택도 합리적.</li></ul>
+<p class="muted">※ 위 메뉴와 무료 이용 조건은 수강 중 들은 내용의 기록이며 현재 운영조건은 확인이 필요함. 행크옥션 설명에는 강의 자체 서비스 홍보 성격이 포함되어 있음.</p>
+</section>
+<section id="checklist" class="card searchable"><h2>실전 물건 분석 체크리스트</h2>
+<p>물건을 골랐을 때 아래 항목을 하나씩 점검해 볼 수 있습니다.</p>
+<div id="checks">
+<label><input type="checkbox"> 내 투자금과 대출 부담이 감당 가능한가?</label><br>
+<label><input type="checkbox"> 내가 아는 지역이거나 시세를 충분히 조사했는가?</label><br>
+<label><input type="checkbox"> 인근 실거래가와 매물 호가를 비교했는가?</label><br>
+<label><input type="checkbox"> 공인중개사에게 실제 매도가 및 매도 기간을 물었는가?</label><br>
+<label><input type="checkbox"> 등기부 갑구·을구에서 말소기준권리를 찾았는가?</label><br>
+<label><input type="checkbox"> 선순위 인수권리와 후순위 예외를 검토했는가?</label><br>
+<label><input type="checkbox"> 임차인의 대항력 및 보증금 인수 여부를 판단했는가?</label><br>
+<label><input type="checkbox"> 매각물건명세서와 현황조사보고서를 확인했는가?</label><br>
+<label><input type="checkbox"> 현장조사 및 명도 위험을 검토했는가?</label><br>
+<label><input type="checkbox"> 세금·수리비·대출이자·매도비용을 반영한 예상 순수익이 충분한가?</label>
+</div><p class="muted">체크 상태는 현재 화면에서만 유지되며 별도로 저장되지는 않습니다.</p></section>
+<section id="future" class="card"><h2>향후 학습할 강의</h2><table><tr><th>강의</th><th>주제</th></tr><tr><td>6강</td><td>경매 입장 시 부동산 방문 노하우 (현장)</td></tr><tr><td>7강</td><td>경매 입찰 방법과 입찰가 산정 Tip (법원)</td></tr><tr><td>8강</td><td>소액으로 경매하는 방법 (경락잔금대출)</td></tr><tr><td>9강</td><td>경매 낙찰 후 절차 (명도)</td></tr><tr><td>10강</td><td>부동산의 가치를 올리는 법 (인테리어)</td></tr><tr><td>11강</td><td>낙찰 부동산 임대, 매도하는 법 (수익 실현)</td></tr><tr><td>12강</td><td>경매 시장에서 평생 살아남는 법</td></tr></table>
+<p class="muted">이 노트는 학습·복습 목적의 요약이며 개별 물건의 법률적 권리분석이나 매수 결정은 원문 서류, 최신 법령 및 전문가 검토가 필요합니다.</p></section>
+<footer class="muted" style="text-align:center;padding:25px">MADANG STUDY · 수강 필기 기반 학습 자료 · 마지막 정리 2026-10-28</footer>
+</main><script>
+function filterNotes(){const q=document.getElementById('search').value.trim().toLowerCase();let n=0;document.querySelectorAll('.searchable').forEach(el=>{const yes=!q||el.innerText.toLowerCase().includes(q);el.style.display=yes?'':'none';if(yes)n++});document.getElementById('searchCount').textContent=q?n+'개 영역 검색됨':''}
+document.getElementById('search').addEventListener('input',filterNotes);
+const links=[...document.querySelectorAll('nav a')];links.forEach(a=>a.addEventListener('click',()=>{links.forEach(x=>x.classList.remove('active'));a.classList.add('active')}));
+</script></body></html>
